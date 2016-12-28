@@ -1,0 +1,19 @@
+
+
+
+/* GET 'Home' page */
+//First argument of res.render is the jade file 
+// with the template that uses this particular controller
+module.exports.homelist = function(req, res) {
+    res.render('locations-list', { title: 'Home' });
+};
+
+/* GET 'Location Info' page */
+module.exports.locationInfo = function(req, res) {
+    res.render('location-info', { title: 'Location Info' });
+};
+
+/* GET 'Add Review' page */
+module.exports.addReview = function(req, res) {
+    res.render('location-review-form', { title: 'Add Review' });
+};
